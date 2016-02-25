@@ -1,10 +1,10 @@
 const { Provider } = ReactRedux;
 
-TodoAppRoot = () => {
+ConnectThingsAppRoot = () => {
   return (
-    <div className="todo-container">
+    <div className="connect-things-container">
       <Provider store={Store}>
-        <TodoApp/>
+        <ConnectThingsApp/>
       </Provider>
     </div>
   );
@@ -12,8 +12,7 @@ TodoAppRoot = () => {
 
 Meteor.startup(()=> {
   ReactDOM.render(
-    <TodoAppRoot />,
+    <ConnectThingsAppRoot />,
     document.getElementById('app')
   );
 });
-

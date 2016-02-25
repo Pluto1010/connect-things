@@ -1,7 +1,5 @@
-TodoApp = () => (
-  <div className="todo-container">
-    <AddTodo/>
-    <TodoList/>
-    <Footer/>
+ConnectThingsApp = () => (
+  <div className="connect-things-container">
+    <Things/>
   </div>
 );
