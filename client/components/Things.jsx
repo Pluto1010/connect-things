@@ -18,6 +18,9 @@ Things = ({ dispatch }) => {
         <div className="centered">Bucket A</div>
       </div>
       <div className="fullwidth">
+        <div className="skip">
+        skip
+        </div>
         <div className="word">
           <Hammer onTap={handleTap} onSwipe={handleSwipe}><div className="centered">Some word</div></Hammer>
         </div>
