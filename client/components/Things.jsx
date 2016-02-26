@@ -3,6 +3,15 @@ const { connect } = ReactRedux;
 Things = ({ dispatch }) => {
   let input;
 
+
+  handleTap = (foo) => {
+    console.log(foo);
+  }
+
+  handleSwipe = (foo) => {
+    console.log(foo);
+  }
+
   return (
     <div className="thing-container">
       <div className="bucket">
@@ -10,7 +19,7 @@ Things = ({ dispatch }) => {
       </div>
       <div className="fullwidth">
         <div className="word">
-          <div className="centered">Some word</div>
+          <Hammer onTap={handleTap} onSwipe={handleSwipe}><div className="centered">Some word</div></Hammer>
         </div>
       </div>
       <div className="bucket">
