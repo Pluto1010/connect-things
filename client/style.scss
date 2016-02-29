@@ -1,5 +1,7 @@
-body {
-    background-color: #333333;
+html, body {
+  overflow: hidden;
+  background-color: #333333;
+  -webkit-overflow-scrolling: touch;
 }
 
 .pagination > li {
@@ -45,16 +47,28 @@ body {
 }
 
 .skip {
-  background-color: red;
+  background-color: #666666;
   height: 10vh;
   position: absolute;
   width: 100%;
   display: block;
-  margin-top: 50%;
+  font-size: 3rem;
+  padding-top: 0.1rem;
+
+  .left {
+    float: left;
+    padding-left: 1.2rem;
+  }
+
+  .right {
+    float: right;
+    padding-right: 1.4rem;
+  }
 }
 
 .word {
   background-color: #0174C1;
+  border: 1rem #333333 solid;
   border-radius: 10rem;
   width: 20rem;
   height: 20rem;
